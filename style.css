@@ -1,0 +1,68 @@
+
+/*
+Links in aside element
+Fixing on in the window
+Logo?
+
+*/
+
+body{
+    font-family: verdana;
+}
+
+
+.item-header{
+    grid-area: header;
+    background-color: blueviolet;
+
+    text-align: center;
+}
+
+
+.item-aside{
+    grid-area: aside;
+    background-color: aquamarine;
+}
+
+.item-aside ul {
+    
+}
+
+.item-section
+{
+    grid-area: section;
+}
+
+.item-footer{
+    grid-area: footer;
+
+background-color: blueviolet;
+text-align: center;
+padding: 30px;
+
+}
+/*
+Targeting the a tag inside item-footer
+*/
+.item-footer a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: aliceblue;
+}
+
+
+.grid-container{
+    display: grid;
+
+    grid-template-columns: 5% 20% 70% 5%;
+
+    grid-template-areas:
+    ". header header ."
+    ". aside section ."
+    ". aside footer .";
+
+    background-color: beige;
+
+}
+
+
